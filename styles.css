@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#particles-js {
+  position: absolute;
+
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #131d2f;
+  height: 100vh;
+  width: 100%;
+}
+.container {
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  width: 50%;
+  background-color: #34495e;
+  position: absolute;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: white;
+}
+.searchContainer {
+  background: #1e2b48;
+  padding: 0px 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchContainer input {
+  background-color: transparent;
+  border: none;
+  width: 80%;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding-left: 0.5rem;
+}
+
+.searchContainer button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  border: 1px solid #007bff;
+}
+
+.searchContainer button:hover {
+  background-color: transparent;
+  border: 1px solid #007bff;
+  transition: 0.3s ease-in-out;
+}
+.detailsContainer {
+  margin-top: 20px;
+  border-radius: 10px;
+  background: #1e2b48;
+  padding: 20px 25px;
+  display: none;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile-image {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-image-icon {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-details {
+  padding: 10px;
+  width: 25rem;
+  color: white;
+}
+
+.username {
+  font-size: 13px;
+  color: #007bff;
+}
+
+.bio {
+  font-size: 14px;
+  margin-top: 10px;
+  color:white;
+}
+
+.stats {
+  background: #141d2e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  color:white;
+}
+
+.media {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.media p {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.media-name {
+  color: gainsboro;
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+#errorMsg {
+  color: #f5156a;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  padding-top: 0.3rem;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    transition: 0.5s all ease-in-out;
+  }
+  .container h1 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .container {
+    width: 80%;
+    transition: 0.5s all ease-in-out;
+  }
+}

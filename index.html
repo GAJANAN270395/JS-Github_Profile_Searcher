@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Github Profile Searcher</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/256/github.png"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body id="particles-js">
+    <div class="container">
+      <h1><i class="ri-github-fill"></i> GitHub Account Finder</h1>
+      <div class="searchContainer">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Enter GitHub Username"
+        />
+
+        <button>Search</button>
+      </div>
+      <p id="errorMsg">Please Enter UserName</p>
+      <div class="detailsContainer" id="userDetails"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js.js"></script>
+    <script src="./particles.js"></script>
+  </body>
+</html>
